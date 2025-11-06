@@ -10,7 +10,7 @@ class Artist(models.Model):
     listeners = models.IntegerField(default=0)
 
     class Meta:
-        db_table = 'artist'  # щоб Django працював із твоєю таблицею
+        db_table = 'artist'
 
     def __str__(self):
         return self.nickname
